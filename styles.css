@@ -245,6 +245,49 @@ h2 {
 }
 
 /* =========================
+   Certificates
+   ========================= */
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.certificate-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.certificate-icon {
+    margin-bottom: 20px;
+}
+
+.certificate-icon i {
+    font-size: 3rem;
+    color: #4f46e5;
+}
+
+.certificate-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+.certificate-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* =========================
    Experience
    ========================= */
 .experience-items {
